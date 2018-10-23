@@ -1,0 +1,9 @@
+library("wordcloud")
+library("RColorBrewer")
+
+data <- subset(YOUR_MODEL_NAME, Hashtag!="HASHTAG_TO_FILTER")
+
+set.seed(123)
+pal <- brewer.pal(8,"Dark2")
+wordcloud(words = data$HASHTAG_DIMENSION, freq = data$HASHTAG_MEASURE, scale=c(7,1.5),
+  min.freq = 5, max.words=75, random.order=FALSE, rot.per=0.35, use.r.layout=TRUE, colors=pal)

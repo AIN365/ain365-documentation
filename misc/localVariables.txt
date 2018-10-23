@@ -1,0 +1,54 @@
+<localVariables>
+  <variable id="TIMEFRAME" parameter="true">
+    <descriptions defaultDescription="Time Frame"/>
+    <variableProperties datatype="INTEGER" mandatory="true">
+      <valueDomain type="StaticList">
+        <listEntry id="-3600">
+          <descriptions defaultDescription="Last Hour"/>
+        </listEntry>
+        <listEntry id="-43200">
+          <descriptions defaultDescription="Last 12 Hours"/>
+        </listEntry>
+        <listEntry id="-86400">
+          <descriptions defaultDescription="Last 24 Hours"/>
+        </listEntry>
+        <listEntry id="-259200">
+          <descriptions defaultDescription="Last 3 Days"/>
+        </listEntry>
+        <listEntry id="-604800">
+          <descriptions defaultDescription="Last 7 Days"/>
+        </listEntry>
+        <listEntry id="0">
+          <descriptions defaultDescription="Show All"/>
+        </listEntry>
+      </valueDomain>
+      <selection multiLine="false" type="Single"/>
+    </variableProperties>
+  </variable>
+  <variable id="HASHTAG" parameter="true">
+    <descriptions defaultDescription="Hashtag"/>
+    <variableProperties datatype="NVARCHAR" length="50" mandatory="false">
+      <valueDomain type="empty"/>
+      <selection multiLine="false" type="Single"/>
+    </variableProperties>
+  </variable>
+  <variable id="BASKET" parameter="true">
+    <descriptions defaultDescription=""/>
+    <variableProperties datatype="INTEGER" mandatory="true">
+      <valueDomain type="StaticList">
+        <listEntry id="5">
+          <descriptions defaultDescription="5 Minutes"/>
+        </listEntry>
+        <listEntry id="10">
+          <descriptions defaultDescription="10 Minutes"/>
+        </listEntry>
+      
+        <listEntry id="15">
+          <descriptions defaultDescription="15 Minutes"/>
+        </listEntry>
+      </valueDomain>
+      <selection multiLine="false" type="Single"/>
+      <defaultRange lowValue="5"/>
+    </variableProperties>
+  </variable>
+</localVariables>
