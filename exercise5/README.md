@@ -5,10 +5,6 @@ In this exercise you will use the exposed InA service and create a connection fr
 ![](screens/exercise5-0.png)<br><br>
 The planned duration for this exercise is 10 minutes. You can find a recording of the exercise [here](https://youtu.be/fxzAUeaWsZ8).<br><br><br>
 
-## Parameters
-
-During the exercise you will require the URL to SAP Analytics Cloud (**AIN365_ANALYTICS_CLOUD**). You can observe the parameter from the **parameters.html** file located on your image.<br><br><br>
-
 ## Steps
 
 Run the following steps to complete the exercise:<br><br>
